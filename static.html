@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static website </title>
+</head>
+<style>
+    *{
+        /* overflow:auto; */
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        
+        overflow-x: hidden;
+    }
+    nav ul{
+        list-style-type: none;
+    
+    }
+    nav h1{
+             margin-left: 30px;
+            
+    }
+    nav li a{
+         position: relative;
+         left: 230px;
+        text-decoration: none;
+        float: left;
+        align-items: center;
+        padding: 25px;
+        bottom: 50px;
+        font-size: 20px;
+    }
+    .navbar{
+        background-image: url("nav.jpg");
+        height: 200px;
+        width: 100%;
+        
+    }
+    .navbar h2{
+        position: relative;
+        right: 200px;
+        top: 10px;
+        font-size: xx-large;
+    }
+    .table{
+        position: relative;
+        right: 430px;
+        top: 40px;
+    }
+    .btn{
+        color: white;
+        background-color: rgb(74, 200, 241);
+        font-size: large;
+        position: relative;
+        left: 550px;
+        bottom: 20px;
+        border: none;
+        width: 150px;
+
+    }
+    .middle1{
+        height: 400px;
+        width: 100%;
+    }
+   .mid1{
+       position: relative;
+       left: 70px;
+       top: 25px;
+       text-align: center;
+
+
+       height: 200px;
+       width: 33%;
+   }
+   .mid1 h1{
+       color: darkcyan;
+   }
+   .mid1 p{
+       line-height: 2;
+   }
+   .mid1 h4{
+       position: relative;
+       right: 120px;
+       color: darkcyan;
+   }
+   .card1{
+       position: relative;
+       left: 550px;
+       bottom: 180px;
+       height: 200px;
+       width: 23%;
+   }
+   .card1 h1{
+        text-align: center;
+        background-color: rgb(45, 155, 118);
+        color: white;
+   }
+   .card1 p{
+       text-align: center;
+       line-height: 1.5;
+       background-color: darkcyan;
+   }
+   .card2{
+       position: relative;
+       left: 885px;
+       bottom: 380px;
+       height: 200px;
+       width: 23%;
+   }
+   .card1 h2 {
+    text-align: center;
+        background-color: rgb(99, 221, 181);
+        color: white;
+
+   }
+   .card2 h1{
+        text-align: center;
+        background-color: rgb(45, 155, 118);
+        color: white;
+   }
+   .card2 p{
+       text-align: center;
+       line-height: 1.5;
+       background-color: darkcyan;
+   }
+   .card2 h2 {
+    text-align: center;
+        background-color: rgb(99, 221, 181);
+        color: white;
+
+   }
+   /* ==============Featured section ========== */
+   .bottom{
+       background-color: rgb(219, 216, 216);
+       height: 400px;
+       width: 100%;
+   }
+    .bottom h2{
+        color: darkcyan;
+        position: relative;
+        left: 120px;
+    }
+    .kent{
+        height: 110px;
+        width: 60%;
+       background-color: #fff;
+       position: relative;    
+       left: 140px;
+    }
+    .kent img{
+        height: 90px ;
+        width: 90px;
+    }
+    .kent h2{
+        position: relative;
+        left: 100px;
+        bottom: 75px;
+    }
+    .kent .knbt{
+        position: relative;
+        left: 670px;
+        background-color: purple;
+        color: #fff;
+        bottom: 100px;
+        width: 100px;
+
+    }
+    .kent h4{
+        position: relative;
+        bottom: 90px;
+        left: 100px;
+        color: gray;
+    }
+    .kent h5{
+        position: relative;
+        bottom: 80px;
+        left: 100px;
+        color: gray;
+    }
+    /* ========security feauteu=== */
+    .security{
+        height: 100px;
+        width: 60%;
+       background-color: #fff;
+       position: relative;    
+       left: 140px;
+       top: 10px;
+    }
+    .security img{
+        height: 80px ;
+        width: 80px;
+    }
+    .security h2{
+        position: relative;
+        left: 100px;
+        bottom: 75px;
+    }
+    .security .sebt{
+        position: relative;
+        left: 670px;
+        background-color: green;
+        border-radius:10px ;
+        color: #fff;
+        bottom: 100px;
+        width: 100px;
+
+    }
+    .security h4{
+        position: relative;
+        bottom: 90px;
+        left: 100px;
+        color: gray;
+    }
+    .security h5{
+        position: relative;
+        bottom: 80px;
+        left: 100px;
+        color: gray;
+    }
+   /* ============================ midtown features===== */
+   .midtown{
+        height: 100px;
+        width: 60%;
+       background-color: #fff;
+       position: relative;    
+       left: 140px;
+       top: 20px;
+    }
+    .midtown img{
+        height: 80px ;
+        width: 80px;
+    }
+    .midtown h2{
+        position: relative;
+        left: 100px;
+        bottom: 75px;
+    }
+    .midtown .mibt{
+        position: relative;
+        left: 670px;
+        background-color: red;
+        border-radius:10px ;
+        color: #fff;
+        bottom: 100px;
+        width: 100px;
+
+    }
+    .midtown h4{
+        position: relative;
+        bottom: 90px;
+        left: 100px;
+        color: gray;
+    }
+    .midtown h5{
+        position: relative;
+        bottom: 80px;
+        left: 100px;
+        color: gray;
+    }
+    .bottombtn{
+        background-color: darkcyan;
+        height: 30px;
+        width: 150px;
+        color: #fff;
+        position: relative;
+        left: 400px;
+        top: 25px;
+        border-radius: 5px;
+
+    }
+    /* ============card3========= */
+      .card3 {
+          height: 210px ;
+          width: 200px;
+          position: relative;
+          left: 1000px;
+          bottom: 360px;
+          background-color: rgb(45, 155, 118);
+      }
+      .card3 h1{
+          text-align: center;
+          font-size: large;
+          background-color: darkcyan;
+      }
+      .card3 img{
+          height: 40px;
+          width: 50px;
+      }
+      .card3 h5{
+            position: relative;
+            left: 100px;
+            bottom: 30px;
+            color: white;
+      }
+       /* card4 */
+
+         .card4 {
+          height: 170px ;
+          width: 200px;
+          /* top: 10px; */
+          position: relative;
+          left: 1000px;
+          bottom: 350px;
+          background-color:  rgb(45, 155, 118);
+      }
+      .card4 h2{
+          font-size: large;
+          position: relative;
+          right: 100px;
+          left: 0px;
+          text-align: center;
+          background-color: darkcyan;
+          color: black;
+      }
+      .card4 p{
+          text-align: center;
+          /* line-height: 1.5; */
+      }
+      .card4 .crbt{
+          position: relative;
+          top: 40px;
+          left: 40px;
+          width: 100px;
+        background-color:darkcyan;
+      }
+      /* lower  */
+    .lower{
+        height: 200px;
+        width: 100%;
+
+    }
+    .lower h1{
+    position: relative;
+    left: 130px;
+    color: darkblue;
+    }
+    .lower h3{
+    position: relative;
+    left: 130px;
+    color: darkcyan;
+    }
+    .lower a{
+        position: relative;
+        left: 180px;
+        display: inline;
+        text-decoration: none;
+    }
+    .locat h3{
+
+    }
+    .locat{
+        position: relative;
+        left: 600px;
+        bottom: 300px;
+    }
+    .locat1{
+        position: relative;
+        left: 700px;
+        bottom: 390px;
+    }
+    .cate1{
+        position: relative;
+        left: 200px;
+        bottom: 100px;
+    }
+    .cate2{
+        position: relative;
+        left: 400px;
+        bottom: 200px;
+    }
+    /* ================== footer========= */
+    footer{
+        background-color: darkcyan;
+        height: 100px;
+        width: 100%;
+
+    }
+    footer ul{
+        list-style-type: none;
+    
+    }
+    footer h1{
+             margin-left: 30px;
+            
+    }
+    footer li a{
+         position: relative;
+         left: 230px;
+        text-decoration: none;
+        float: left;
+        align-items: center;
+        color: #fff;
+        padding: 25px;
+        bottom: 50px;
+        font-size: 20px;
+}
+    footer h2{
+        position: relative;
+        right: 200px;
+        top: 10px;
+        font-size: xx-large;
+    }
+    footer h3{
+        color: white;
+        position: relative;
+        /* left: ; */
+        right: 350px;
+        top: 20px;
+    }
+
+
+</style>
+<body>
+ <!-- ===========================nav bar ======================================== -->
+   <div class="navbar">  
+    <nav>
+        <h1> JOBLISTING </h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Jobs">JOBS</a></li>
+            <li><a href="#Search">Search</a></li>
+            <li><a href="#About">About us </a></li>
+            <li><a href="#Contact ">Contact Us  </a></li>
+            <li><a href="#Login">Login </a></li>
+            <li><a href="#Register">Register </a></li>
+        </ul>
+    </nav>
+    <h2>FIND A JOB</h2>
+    <div class="table">
+    <label for="I'm lookinf for"> I'm Looking For.....</label>
+    <input type="text" name="joblink" id="" placeholder="job title,keyword or company name ">
+    
+    <label for="location ">Location</label> 
+    <input type="text" name="" id="" placeholder="City or State ">
+    <button class="btn">FIND JOBS</button>
+</div>
+</div> 
+
+
+<!-- =======================middle one =================================== -->
+<div class="middle1">
+    <div class="mid1">
+        <h1>WELCOME TO JOB LISTING WEBSITE </h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio, odio maxime aliquid officiis sed labore aspernatur ratione alias expedita beatae omnis fugit laboriosam enim, magnam delectus assumenda velit aperiam consequuntur est minus! Reiciendis aliquam ab expedita quas totam consequatur, molestiae ea. Eius, ipsum quibusdam laborum itaque architecto molestias dicta!
+        </p>
+        <h4>Read More About us </h4>
+    </div>
+    <div class="card1">
+        <h1>EMPLOYERS</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae animi ea nostrum fugiat sint ipsam autem tempore sequi. Aspernatur amet labore rem corporis. Voluptatum, architecto!   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ab.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam dolore ipsum repellendus voluptatum delectus.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut?      </P>
+        <h2>LEARN MORE</h2>
+       
+    </div>
+    <div class="card2">
+        <h1>EMPLOYERS</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae animi ea nostrum fugiat sint ipsam autem tempore sequi. Aspernatur amet labore rem corporis. Voluptatum, architecto!   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ab.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam dolore ipsum repellendus voluptatum delectus.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut?      </P>
+        <h2 class="bt"> LEARN MORE</h2>
+    </div>
+
+</div>
+
+  <!-- =====================================FEATURED JOBS============== -->
+  <div class="bottom">
+      <h2>FEATURED JOBS </h2>
+       <div class="kent">
+           <img src="kent.jpg" alt="imagenotfound" srcset="">
+           <h2>Principal Pharamaceutical Scientist/Research Fellow   </h2>
+           <button class="knbt">Part Time </button>
+           <h4>Biotech/R&D/Science Jobs </h4>
+           <h5>Post on:- 17-06-2013   Company name:-Kent Pharamaceutical Location: Ashord </h5>
+
+       </div>
+       
+       <div class="security">
+           <img src="security.jpg" alt="" srcset="">
+           <h2>Security Officer-Luxury Retail   </h2>
+           <button class="sebt">Contact</button>
+           <h4>Security/protective Services jobs </h4>
+           <h5> Post on:- 20-06-2013 Company name :- Cannon Security Guard Location: Manchester </h5>
+       </div>
+       <div class="midtown">
+           <img src="midtown.png" alt="" srcset="">
+           <h2>Aquatics Instructor  </h2>
+           <button class="mibt">Full Time</button>
+           <h4>Education/Training jobs </h4>
+           <h5> Post on:- 17-06-2013 Company name :- Midtown  Location: Seattle</h5>
+       </div>
+
+       <button class="bottombtn"> BROWSE ALL JOBS </button>
+
+
+       <!-- card   -->
+       <div class="card3">
+           <h1>FEATURED EMPLOYERS</h1>
+           <img src="kent.jpg" alt="">
+           <hr>
+           <h5>Kent </h5>
+           
+           <img src="midtown.png" alt="">
+           <hr>
+           <h5>Midtown</h5>
+           <img src="security.jpg" alt="">
+           <h5>Cannon</h5>
+       </div>
+       <!-- card4 -->
+       <div class="card4">
+           <h2> Subscribe To our NewsLetter</h2>
+           <p>Lorem ipsum dolor sit  Lorem ipsum dolor sit amet.   Lorem ipsum dolor, si Lore  </p>
+           <button class=" crbt"> SUBSCRIBE</button>
+       </div>
+
+       
+    </div>
+
+    <div class="lower">
+        <h1>OTHER WAY TO SEARCH</h1>
+        <div class="cate">
+            <h3>CATEGORIES</h3>
+            <a href="#">Accounting</a> <br>
+            <a href="#">Administrative</a> <br>
+            <a href="#">Biotech</a> <br>
+
+            <a href="#">Eduction</a> <br>
+            <a href="#">Engineering jobs</a>
+        </div>
+        <div class="cate1">
+           
+            <a href="#">Accounting</a> <br>
+            <a href="#">Administrative</a> <br>
+            <a href="#">Biotech</a> <br>
+
+            <a href="#">Eduction</a> <br>
+            <a href="#">Engineering jobs</a>
+        </div>
+        <div class="cate2">
+           
+            <a href="#">Accounting</a> <br>
+            <a href="#">Administrative</a> <br>
+            <a href="#">Biotech</a> <br>
+
+            <a href="#">Eduction</a> <br>
+            <a href="#">Engineering jobs</a>
+        </div>
+        <div class="locat">
+            <h3>Location</h3>
+            <a href="#">Ashford</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a>
+        </div>
+        <div class="locat1">
+            <a href="#">Ashford</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a><br>
+            <a href="#">leeds</a>
+        </div>
+    </div>
+     
+   <footer>
+    <h1> JOBLISTING </h1>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Jobs">JOBS</a></li>
+        <li><a href="#Search">Search</a></li>
+        <li><a href="#About">About us </a></li>
+        <li><a href="#Contact ">Contact Us  </a></li>
+        <li><a href="#Login">Login </a></li>
+        <li><a href="#Register">Register </a></li>
+    </ul>
+    <h3>@2015 abhishek singh copyright </h3>
+   </footer>
+    
+</body>
+</html>
